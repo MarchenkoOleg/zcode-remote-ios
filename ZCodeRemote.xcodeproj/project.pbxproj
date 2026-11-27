@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A1E96FFD8D745A2CBA52F0 /* VersionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBF9EB7E08E31C8179CE8D /* VersionChecker.swift */; };
+		072F52206EF65D3D68E048F6 /* RemoteLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EC0144FB3CAA64E7F31518 /* RemoteLink.swift */; };
+		09349A0318716DB2F557C286 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB785AED7C0A00DEFEE59432 /* Store.swift */; };
+		1B996535C162503C19446338 /* RemoteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6D992C1285AEAB224A2D /* RemoteSession.swift */; };
+		55529CFBF4B4A01A584AC0E9 /* ConnectivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635D4FC207960D0A169AF3D /* ConnectivityMonitor.swift */; };
+		7B7D07E289C9280FBFB6F396 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9A9E2DE078217A57F07B1 /* AppModel.swift */; };
+		7C4DCF2EC067A607435FCD2E /* AuthWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C88A658F4C66DBF18266B /* AuthWebView.swift */; };
+		7EEABAD132DB16A0E53965EA /* EditSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CB72ABEE10226CA58A4BC5 /* EditSessionView.swift */; };
+		80CE37B038FCA68A937483E5 /* WebViewCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7733B8256EF6046702974 /* WebViewCache.swift */; };
+		8103C5EAFC29F6ED57AAAC14 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C47324D50A6ED7AAE2C69 /* LogView.swift */; };
+		927D307890AC702178CD7F01 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458CCC807EA92B9E9DAC5A5 /* AppLog.swift */; };
+		99C96993177D372EA5B9D64B /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5FE953EB0854A79B9C8DA /* AccountListView.swift */; };
+		B73641C0AF1167B5663AE735 /* RemoteWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56A9ECDFDB8CF1B3C4DADB /* RemoteWebView.swift */; };
+		B8389AA35BF9FF5C4B2771EA /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE7B6187BE839D3F6FF7F3 /* CoreTests.swift */; };
+		C0C75D4501F3882BB5F851A2 /* ZCodeRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A4008D46E540A568F1F00 /* ZCodeRemoteApp.swift */; };
+		C5F069099AA5F2F0E84098AF /* AddSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1F2C2A232819A8CD50C60 /* AddSessionView.swift */; };
+		CAC0B8C478827DDE62748922 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405250C19463FA229BC16824 /* KeychainStore.swift */; };
+		DE7C6E1041E14618CEB6D5BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EAC13365323F339E0D9701 /* ContentView.swift */; };
+		E0A0DD4232BA737FB892B6B4 /* RemoteSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F11198AA1CEF3507A6657 /* RemoteSessionView.swift */; };
+		E788BCD97A4BDD9E334FBB43 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */; };
+		E95CA695379A836406FAE021 /* ZCodeAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8F71E07427875BE6CF987 /* ZCodeAccount.swift */; };
+		EA2CCC5BE27D2B2C81B3D159 /* Backoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E0B5F1ECAB2AB2B6B5ED /* Backoff.swift */; };
+		F1D5922FD91D8078061F1B6B /* AppTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268993B4C2831230C7B6B96 /* AppTypes.swift */; };
+		FE9E05A7ADB3852C02012F18 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB16EC4148D811827CAF328 /* AddAccountView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C334261277826000340150B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C7330F3D23519E3CCF51D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2842446EF229481BBF178FBB;
+			remoteInfo = ZCodeRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E7733B8256EF6046702974 /* WebViewCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCache.swift; sourceTree = "<group>"; };
+		07CB72ABEE10226CA58A4BC5 /* EditSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSessionView.swift; sourceTree = "<group>"; };
+		3268993B4C2831230C7B6B96 /* AppTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypes.swift; sourceTree = "<group>"; };
+		3CFE7B6187BE839D3F6FF7F3 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
+		3FB1F2C2A232819A8CD50C60 /* AddSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionView.swift; sourceTree = "<group>"; };
+		400A4008D46E540A568F1F00 /* ZCodeRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCodeRemoteApp.swift; sourceTree = "<group>"; };
+		403F11198AA1CEF3507A6657 /* RemoteSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSessionView.swift; sourceTree = "<group>"; };
+		405250C19463FA229BC16824 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		5635D4FC207960D0A169AF3D /* ConnectivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityMonitor.swift; sourceTree = "<group>"; };
+		6CB16EC4148D811827CAF328 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		6E56A9ECDFDB8CF1B3C4DADB /* RemoteWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWebView.swift; sourceTree = "<group>"; };
+		80EAC13365323F339E0D9701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8BA5FE953EB0854A79B9C8DA /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		90EBF9EB7E08E31C8179CE8D /* VersionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionChecker.swift; sourceTree = "<group>"; };
+		928C47324D50A6ED7AAE2C69 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		9B91E0B5F1ECAB2AB2B6B5ED /* Backoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backoff.swift; sourceTree = "<group>"; };
+		BA3C88A658F4C66DBF18266B /* AuthWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebView.swift; sourceTree = "<group>"; };
+		BBB8F71E07427875BE6CF987 /* ZCodeAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCodeAccount.swift; sourceTree = "<group>"; };
+		BD2275BD818CA4F27EB60DF3 /* ZCodeRemoteTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZCodeRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C458CCC807EA92B9E9DAC5A5 /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
+		D59B6D992C1285AEAB224A2D /* RemoteSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSession.swift; sourceTree = "<group>"; };
+		DB785AED7C0A00DEFEE59432 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E0EC0144FB3CAA64E7F31518 /* RemoteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLink.swift; sourceTree = "<group>"; };
+		E7E9A9E2DE078217A57F07B1 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F087B36846B8D843B68E385C /* ZCodeRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ZCodeRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06C02B64A7E1A2EFE865A7A0 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C458CCC807EA92B9E9DAC5A5 /* AppLog.swift */,
+				9B91E0B5F1ECAB2AB2B6B5ED /* Backoff.swift */,
+				5635D4FC207960D0A169AF3D /* ConnectivityMonitor.swift */,
+				405250C19463FA229BC16824 /* KeychainStore.swift */,
+				DB785AED7C0A00DEFEE59432 /* Store.swift */,
+				90EBF9EB7E08E31C8179CE8D /* VersionChecker.swift */,
+				00E7733B8256EF6046702974 /* WebViewCache.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		1D8E97141BF7FF1542916E42 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E5EB86E145B875F58F15CD55 /* Models */,
+				06C02B64A7E1A2EFE865A7A0 /* Stores */,
+				69A7926A073DFA4CEE47F981 /* Views */,
+				E7E9A9E2DE078217A57F07B1 /* AppModel.swift */,
+				400A4008D46E540A568F1F00 /* ZCodeRemoteApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		26220D5368AF5424ED94A6A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F087B36846B8D843B68E385C /* ZCodeRemote.app */,
+				BD2275BD818CA4F27EB60DF3 /* ZCodeRemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4721D80A0CE668C904B629D1 = {
+			isa = PBXGroup;
+			children = (
+				5F3A18EB41718A1439D0CDE5 /* Resources */,
+				1D8E97141BF7FF1542916E42 /* Sources */,
+				5A50E1B827022AFB75CE858D /* Tests */,
+				26220D5368AF5424ED94A6A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A50E1B827022AFB75CE858D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CFE7B6187BE839D3F6FF7F3 /* CoreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5F3A18EB41718A1439D0CDE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69A7926A073DFA4CEE47F981 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BA5FE953EB0854A79B9C8DA /* AccountListView.swift */,
+				6CB16EC4148D811827CAF328 /* AddAccountView.swift */,
+				3FB1F2C2A232819A8CD50C60 /* AddSessionView.swift */,
+				BA3C88A658F4C66DBF18266B /* AuthWebView.swift */,
+				80EAC13365323F339E0D9701 /* ContentView.swift */,
+				07CB72ABEE10226CA58A4BC5 /* EditSessionView.swift */,
+				928C47324D50A6ED7AAE2C69 /* LogView.swift */,
+				403F11198AA1CEF3507A6657 /* RemoteSessionView.swift */,
+				6E56A9ECDFDB8CF1B3C4DADB /* RemoteWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5EB86E145B875F58F15CD55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3268993B4C2831230C7B6B96 /* AppTypes.swift */,
+				E0EC0144FB3CAA64E7F31518 /* RemoteLink.swift */,
+				D59B6D992C1285AEAB224A2D /* RemoteSession.swift */,
+				BBB8F71E07427875BE6CF987 /* ZCodeAccount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2842446EF229481BBF178FBB /* ZCodeRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC34445F1F5C8616F926FA60 /* Build configuration list for PBXNativeTarget "ZCodeRemote" */;
+			buildPhases = (
+				01045C3034523895830F2F87 /* Sources */,
+				F4B4788B03176CB9E0FF99D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZCodeRemote;
+			packageProductDependencies = (
+			);
+			productName = ZCodeRemote;
+			productReference = F087B36846B8D843B68E385C /* ZCodeRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDFBEFAB3ADA8C56386C44EA /* ZCodeRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 531D5934621D854AB2D27F9B /* Build configuration list for PBXNativeTarget "ZCodeRemoteTests" */;
+			buildPhases = (
+				8CC8D55F72460E948F6AFD54 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1B05ABCF644076B3CDFCC4 /* PBXTargetDependency */,
+			);
+			name = ZCodeRemoteTests;
+			packageProductDependencies = (
+			);
+			productName = ZCodeRemoteTests;
+			productReference = BD2275BD818CA4F27EB60DF3 /* ZCodeRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F73C7330F3D23519E3CCF51D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2842446EF229481BBF178FBB = {
+						DevelopmentTeam = ZX334W6FA5;
+						ProvisioningStyle = Automatic;
+					};
+					CDFBEFAB3ADA8C56386C44EA = {
+						DevelopmentTeam = ZX334W6FA5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9FEDEF84686A0B05FDD7B988 /* Build configuration list for PBXProject "ZCodeRemote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4721D80A0CE668C904B629D1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 26220D5368AF5424ED94A6A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2842446EF229481BBF178FBB /* ZCodeRemote */,
+				CDFBEFAB3ADA8C56386C44EA /* ZCodeRemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B4788B03176CB9E0FF99D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E788BCD97A4BDD9E334FBB43 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01045C3034523895830F2F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C96993177D372EA5B9D64B /* AccountListView.swift in Sources */,
+				FE9E05A7ADB3852C02012F18 /* AddAccountView.swift in Sources */,
+				C5F069099AA5F2F0E84098AF /* AddSessionView.swift in Sources */,
+				927D307890AC702178CD7F01 /* AppLog.swift in Sources */,
+				7B7D07E289C9280FBFB6F396 /* AppModel.swift in Sources */,
+				F1D5922FD91D8078061F1B6B /* AppTypes.swift in Sources */,
+				7C4DCF2EC067A607435FCD2E /* AuthWebView.swift in Sources */,
+				EA2CCC5BE27D2B2C81B3D159 /* Backoff.swift in Sources */,
+				55529CFBF4B4A01A584AC0E9 /* ConnectivityMonitor.swift in Sources */,
+				DE7C6E1041E14618CEB6D5BE /* ContentView.swift in Sources */,
+				7EEABAD132DB16A0E53965EA /* EditSessionView.swift in Sources */,
+				CAC0B8C478827DDE62748922 /* KeychainStore.swift in Sources */,
+				8103C5EAFC29F6ED57AAAC14 /* LogView.swift in Sources */,
+				072F52206EF65D3D68E048F6 /* RemoteLink.swift in Sources */,
+				1B996535C162503C19446338 /* RemoteSession.swift in Sources */,
+				E0A0DD4232BA737FB892B6B4 /* RemoteSessionView.swift in Sources */,
+				B73641C0AF1167B5663AE735 /* RemoteWebView.swift in Sources */,
+				09349A0318716DB2F557C286 /* Store.swift in Sources */,
+				02A1E96FFD8D745A2CBA52F0 /* VersionChecker.swift in Sources */,
+				80CE37B038FCA68A937483E5 /* WebViewCache.swift in Sources */,
+				E95CA695379A836406FAE021 /* ZCodeAccount.swift in Sources */,
+				C0C75D4501F3882BB5F851A2 /* ZCodeRemoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC8D55F72460E948F6AFD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8389AA35BF9FF5C4B2771EA /* CoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C1B05ABCF644076B3CDFCC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2842446EF229481BBF178FBB /* ZCodeRemote */;
+			targetProxy = 9C334261277826000340150B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FC2CA1A00CC8250E1FB34B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ligarobotov.zcode-remote-tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCodeRemote.app/ZCodeRemote";
+			};
+			name = Debug;
+		};
+		3D7383C6298A7FDC334E0199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ligarobotov.chores;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47F7156CE95402ED7B6D92E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZX334W6FA5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		5C668A735FE986B010CB1D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ligarobotov.chores;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D902F69BA4E632B5BEE98F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZX334W6FA5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F2447338816CCC39AAFE39CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ligarobotov.zcode-remote-tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCodeRemote.app/ZCodeRemote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		531D5934621D854AB2D27F9B /* Build configuration list for PBXNativeTarget "ZCodeRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC2CA1A00CC8250E1FB34B6 /* Debug */,
+				F2447338816CCC39AAFE39CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9FEDEF84686A0B05FDD7B988 /* Build configuration list for PBXProject "ZCodeRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F7156CE95402ED7B6D92E5 /* Debug */,
+				D902F69BA4E632B5BEE98F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC34445F1F5C8616F926FA60 /* Build configuration list for PBXNativeTarget "ZCodeRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7383C6298A7FDC334E0199 /* Debug */,
+				5C668A735FE986B010CB1D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F73C7330F3D23519E3CCF51D /* Project object */;
+}

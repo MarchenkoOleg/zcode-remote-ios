@@ -1,0 +1,7 @@
+.build/
+.build-device/
+DerivedData/
+*.xcuserdata/
+xcuserdata/
+.DS_Store
+*.log

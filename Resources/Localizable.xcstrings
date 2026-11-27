@@ -1,0 +1,291 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "Авторизация" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Authorization" } }
+      }
+    },
+    "Аккаунт" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Account" } }
+      }
+    },
+    "Аккаунты и сессии" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Accounts & Sessions" } }
+      }
+    },
+    "Версия" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Version" } }
+      }
+    },
+    "Версия ZCode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "ZCode version" } }
+      }
+    },
+    "Версия актуальна" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Up to date" } }
+      }
+    },
+    "Версия приложения" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "App version" } }
+      }
+    },
+    "Доступна версия" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Version available" } }
+      }
+    },
+    "используется" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "in use" } }
+      }
+    },
+    "Все" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "All" } }
+      }
+    },
+    "Готово" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } }
+      }
+    },
+    "Добавить аккаунт" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add account" } }
+      }
+    },
+    "Добавить сессию" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add session" } }
+      }
+    },
+    "Добавьте аккаунт ZCode: у каждого будут свои куки и авторизация." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add a ZCode account: each one keeps its own cookies and sign-in." } }
+      }
+    },
+    "Домой" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } }
+      }
+    },
+    "Закрыть" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close" } }
+      }
+    },
+    "Записей нет" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No entries" } }
+      }
+    },
+    "Изменить" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit" } }
+      }
+    },
+    "Изменить сессии" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit sessions" } }
+      }
+    },
+    "Изменить сессию" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit session" } }
+      }
+    },
+    "Имя машины" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Machine name" } }
+      }
+    },
+    "Изменения применяются к существующей сессии: авторизация и история остаются, обновляется только ссылка." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Changes apply to the existing session: sign-in and history stay, only the link is updated." } }
+      }
+    },
+    "Кнопка «Домой»" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home button" } }
+      }
+    },
+    "Логи" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Logs" } }
+      }
+    },
+    "Логи и сеть" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Logs & network" } }
+      }
+    },
+    "Логи появятся после подключения к серверу." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Logs will appear after connecting to the server." } }
+      }
+    },
+    "Логин z.ai (необязательно)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "z.ai login (optional)" } }
+      }
+    },
+    "Название, например Oleg" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Name, e.g. Oleg" } }
+      }
+    },
+    "Не удалось проверить версию" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not check the version" } }
+      }
+    },
+    "Не удалось разобрать ссылку. Ожидается https://zcode.z.ai/remote/v4?sid=…&mid=…" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not parse the link. Expected https://zcode.z.ai/remote/v4?sid=…&mid=…" } }
+      }
+    },
+    "Нет аккаунтов" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No accounts" } }
+      }
+    },
+    "Нет сессий" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No sessions" } }
+      }
+    },
+    "Новая сессия" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New session" } }
+      }
+    },
+    "Новый аккаунт" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New account" } }
+      }
+    },
+    "Отмена" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } }
+      }
+    },
+    "Параметры" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Parameters" } }
+      }
+    },
+    "Перейти на" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Switch to" } }
+      }
+    },
+    "Поверх, в шапке" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "On top, in the header" } }
+      }
+    },
+    "Править" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit" } }
+      }
+    },
+    "Проверить версию" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Check version" } }
+      }
+    },
+    "Проверить последнюю версию" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Check latest version" } }
+      }
+    },
+    "Разобрать ссылку" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Parse link" } }
+      }
+    },
+    "Русский" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Russian" } }
+      }
+    },
+    "Сессия" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Session" } }
+      }
+    },
+    "Сессия удалена" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Session deleted" } }
+      }
+    },
+    "Системный" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "System" } }
+      }
+    },
+    "Сохранить" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save" } }
+      }
+    },
+    "Ссылка из ZCode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Link from ZCode" } }
+      }
+    },
+    "Ссылка распознаётся автоматически, как только в ней появятся sid и mid." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The link is detected automatically once it contains sid and mid." } }
+      }
+    },
+    "Снизу экрана" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "At the bottom" } }
+      }
+    },
+    "Токен (необязательно)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Token (optional)" } }
+      }
+    },
+    "Токен хранится в Keychain только на этом устройстве. Основная авторизация живёт в изолированном хранилище аккаунта — можно оставить поле пустым и войти в веб-интерфейсе." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The token is stored in Keychain on this device only. The main sign-in lives in the account's isolated store — you can leave this empty and sign in via the web UI." } }
+      }
+    },
+    "Удалить" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } }
+      }
+    },
+    "Удалить аккаунт" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete account" } }
+      }
+    },
+    "Язык" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } }
+      }
+    },
+    "доступна" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "available" } }
+      }
+    },
+    "Последняя версия" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Latest version" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
