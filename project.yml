@@ -1,6 +1,6 @@
 name: ZCodeRemote
 options:
-  bundleIdPrefix: ru.ligarobotov
+  bundleIdPrefix: lr-tech
   deploymentTarget: "17.0"
   createIntermediateGroups: true
   groupSortPosition: top
@@ -37,7 +37,7 @@ targets:
         CFBundleShortVersionString: "1.0"
         CFBundleVersion: "1"
         CFBundleURLTypes:
-          - CFBundleURLName: ru.ligarobotov.zcode-remote
+          - CFBundleURLName: lr-tech.zcode-remote
             CFBundleURLSchemes:
               - zcode-remote
         UILaunchScreen: {}
@@ -55,7 +55,7 @@ targets:
           - UIInterfaceOrientationLandscapeRight
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: ru.ligarobotov.chores
+        PRODUCT_BUNDLE_IDENTIFIER: lr-tech.zcode-remote
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
 
@@ -69,6 +69,6 @@ targets:
       - target: ZCodeRemote
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: ru.ligarobotov.zcode-remote-tests
+        PRODUCT_BUNDLE_IDENTIFIER: lr-tech.zcode-remote-tests
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/ZCodeRemote.app/ZCodeRemote"

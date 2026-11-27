@@ -10,6 +10,11 @@ struct AccountListView: View {
     @State private var showAddSession = false
     @State private var editingSession: RemoteSession?
     @State private var showLogs = false
+    @State private var nativeSession: NativeSessionTarget?
+
+    private struct NativeSessionTarget: Identifiable {
+        let id: UUID
+    }
 
     private var isEditing: Bool {
         editMode?.wrappedValue.isEditing == true
@@ -93,6 +98,13 @@ struct AccountListView: View {
                         Label("Изменить сессии", systemImage: "pencil")
                     }
                     Button {
+                        if let id = model.selectedSessionID ?? model.sessions.first?.id {
+                            nativeSession = NativeSessionTarget(id: id)
+                        }
+                    } label: {
+                        Label("Нативный режим (бета)", systemImage: "bolt")
+                    }
+                    Button {
                         showLogs = true
                     } label: {
                         Label("Логи и сеть", systemImage: "doc.text.magnifyingglass")
@@ -159,7 +171,16 @@ struct AccountListView: View {
         .sheet(isPresented: $showLogs) {
             LogView()
         }
-        .task { await model.versionChecker.check() }
+        .sheet(item: $nativeSession) { target in
+            NativeSessionView(sessionID: target.id)
+        }
+        .task {
+            if CommandLine.arguments.contains("native"),
+               let id = model.selectedSessionID ?? model.sessions.first?.id {
+                nativeSession = NativeSessionTarget(id: id)
+            }
+            await model.versionChecker.check()
+        }
     }
 }
 

@@ -151,6 +151,46 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not parse the link. Expected https://zcode.z.ai/remote/v4?sid=…&mid=…" } }
       }
     },
+    "Нативный режим (бета)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Native mode (beta)" } }
+      }
+    },
+    "Нативный режим" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Native mode" } }
+      }
+    },
+    "Ожидание подключения" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Waiting to connect" } }
+      }
+    },
+    "Подключение…" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connecting…" } }
+      }
+    },
+    "Связано:" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paired:" } }
+      }
+    },
+    "Пространства" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Workspaces" } }
+      }
+    },
+    "События" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Events" } }
+      }
+    },
+    "Вход в z.ai" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sign in to z.ai" } }
+      }
+    },
     "Нет аккаунтов" : {
       "localizations" : {
         "en" : { "stringUnit" : { "state" : "translated", "value" : "No accounts" } }

@@ -45,5 +45,13 @@ struct ContentView: View {
             }
         }
         .environment(\.locale, model.locale)
+        .task {
+            // Debug/testing entry point: switch language after the UI settles.
+            guard let argument = CommandLine.arguments.first(where: { $0.hasPrefix("switch-language=") }),
+                  let language = AppLanguage(rawValue: String(argument.dropFirst("switch-language=".count)))
+            else { return }
+            try? await Task.sleep(for: .milliseconds(1200))
+            model.language = language
+        }
     }
 }

@@ -49,6 +49,78 @@ struct RemoteLinkTests {
     }
 }
 
+struct NativeRemoteProtocolTests {
+    @Test func parsesDataEnvelope() throws {
+        let json = #"""
+        {"type":"data","server_ts":123,"payload":{"zcode_type":"bridge","dataBase64":"AAEC","fragmentIndex":0,"fragmentCount":1,"messageBytes":3}}
+        """#
+        let message = try #require(NativeRemoteProtocol.parse(json))
+        #expect(message.type == "data")
+        #expect(message.serverTs == 123)
+        #expect(message.payload?.zcodeType == "bridge")
+        #expect(message.payload?.messageBytes == 3)
+    }
+
+    @Test func parsesBootstrapResponse() throws {
+        let json = #"""
+        {"type":"data","payload":{"zcode_type":"bootstrap-response","requestId":"r1","success":true,"result":{"windowControlSessionId":"w1","desktopAppVersion":"4.0.0","workspaces":[{"workspacePath":"/tmp/p","label":"Project","kind":"local","connectionState":"connected"}],"activeWorkspaceKey":"/tmp/p"}}}
+        """#
+        let message = try #require(NativeRemoteProtocol.parse(json))
+        #expect(message.payload?.zcodeType == "bootstrap-response")
+        #expect(message.payload?.result?.desktopAppVersion == "4.0.0")
+        #expect(message.payload?.result?.workspaces?.first?.label == "Project")
+        #expect(message.payload?.result?.activeWorkspaceKey == "/tmp/p")
+    }
+
+    @Test func reassemblesFragmentsInOrder() {
+        var assembler = FragmentReassembler()
+        #expect(assembler.add(base64: "Aw==", index: 2, count: 3, bytes: 3) == nil)
+        #expect(assembler.add(base64: "AQ==", index: 0, count: 3, bytes: 3) == nil)
+        let complete = assembler.add(base64: "Ag==", index: 1, count: 3, bytes: 3)
+        #expect(complete == Data([1, 2, 3]))
+    }
+
+    @Test func singleFragmentPassesThrough() {
+        var assembler = FragmentReassembler()
+        #expect(assembler.add(base64: "AQID", index: nil, count: nil, bytes: nil)
+                == Data([1, 2, 3]))
+    }
+}
+
+struct RPCBinaryCodecTests {
+    @Test func roundTripsAllTags() throws {
+        let values: [RPCValue] = [
+            .undefined,
+            .string("привет"),
+            .data(Data([0, 1, 255])),
+            .array([.int(300), .string("x")]),
+            .object("{\"ok\":true}"),
+            .int(2_000_000),
+        ]
+        for value in values {
+            let decoded = try RPCValue.decode(RPCValue.encode(value))
+            #expect(decoded == value)
+        }
+    }
+
+    @Test func decodesRequestMessage() throws {
+        let bytes = RPCMessage.request(
+            id: 7,
+            channel: "zcodeTaskService",
+            method: "listTasks",
+            arguments: .object("{\"workspacePath\":\"/tmp/p\"}")
+        )
+        let message = try RPCMessage.decode(bytes)
+        #expect(message.type == 100)
+        #expect(message.id == 7)
+        #expect(message.channel == "zcodeTaskService")
+    }
+
+    @Test func crc32MatchesKnownVector() {
+        #expect(CRC32.hex(Data("123456789".utf8)) == "cbf43926")
+    }
+}
+
 struct BackoffTests {
     @Test func doublesUntilCap() {
         var backoff = Backoff(base: 1, cap: 4)
