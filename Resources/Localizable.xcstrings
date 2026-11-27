@@ -216,6 +216,26 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } }
       }
     },
+    "Ок" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "OK" } }
+      }
+    },
+    "Камера недоступна" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Camera unavailable" } }
+      }
+    },
+    "QR-код не распознан" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "QR code not recognized" } }
+      }
+    },
+    "Сканировать QR" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan QR" } }
+      }
+    },
     "Параметры" : {
       "localizations" : {
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Parameters" } }

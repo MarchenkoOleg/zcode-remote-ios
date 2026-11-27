@@ -9,6 +9,12 @@ struct AddSessionView: View {
     @State private var fields = RemoteLink.Fields(sid: "", mid: "", name: "", appVersion: "3.19.0")
     @State private var parseError: String?
 
+    init(accountID: UUID, initialFields: RemoteLink.Fields? = nil) {
+        self.accountID = accountID
+        _fields = State(initialValue: initialFields
+            ?? RemoteLink.Fields(sid: "", mid: "", name: "", appVersion: "3.19.0"))
+    }
+
     private var canSave: Bool {
         !fields.sid.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
             && !fields.mid.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty

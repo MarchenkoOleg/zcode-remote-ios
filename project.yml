@@ -28,12 +28,17 @@ targets:
         buildPhase: resources
       - path: Resources/Assets.xcassets
         buildPhase: resources
+      - path: Resources/en.lproj/InfoPlist.strings
+        buildPhase: resources
+      - path: Resources/ru.lproj/InfoPlist.strings
+        buildPhase: resources
     info:
       path: Resources/Info.plist
       properties:
         CFBundleDisplayName: ZCode Remote
         CFBundleName: ZCode Remote
         CFBundleIconName: AppIcon
+        NSCameraUsageDescription: "Сканировать QR-код сессии ZCode для добавления аккаунта"
         CFBundleShortVersionString: "1.0"
         CFBundleVersion: "1"
         CFBundleURLTypes:
@@ -72,3 +77,21 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: lr-tech.zcode-remote-tests
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/ZCodeRemote.app/ZCodeRemote"
+
+schemes:
+  ZCodeRemote:
+    build:
+      targets:
+        ZCodeRemote: [run, test, profile, analyze, archive]
+        ZCodeRemoteTests: [test]
+    run:
+      target: ZCodeRemote
+    test:
+      targets:
+        - ZCodeRemoteTests
+    profile:
+      target: ZCodeRemote
+    analyze:
+      target: ZCodeRemote
+    archive:
+      target: ZCodeRemote

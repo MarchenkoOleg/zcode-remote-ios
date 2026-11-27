@@ -12,6 +12,7 @@
 		09349A0318716DB2F557C286 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB785AED7C0A00DEFEE59432 /* Store.swift */; };
 		0A73A4F1F595BAF1CC303ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7512A2A0545F2FDD31B11CE3 /* Assets.xcassets */; };
 		1B996535C162503C19446338 /* RemoteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6D992C1285AEAB224A2D /* RemoteSession.swift */; };
+		2BE1A515079EABA9A12C7AB2 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420196D639C69DB5C02DAD5 /* QRScannerView.swift */; };
 		2EE3956C1D1D7BF915E9DC0C /* NativeRemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF43ECC32C089376625AC3E /* NativeRemoteProtocol.swift */; };
 		3AC62F80898087F5A253D218 /* NativeSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC34A1D0A34301427418D3 /* NativeSessionView.swift */; };
 		55529CFBF4B4A01A584AC0E9 /* ConnectivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635D4FC207960D0A169AF3D /* ConnectivityMonitor.swift */; };
@@ -26,11 +27,13 @@
 		B8389AA35BF9FF5C4B2771EA /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE7B6187BE839D3F6FF7F3 /* CoreTests.swift */; };
 		C0C75D4501F3882BB5F851A2 /* ZCodeRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A4008D46E540A568F1F00 /* ZCodeRemoteApp.swift */; };
 		C5F069099AA5F2F0E84098AF /* AddSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1F2C2A232819A8CD50C60 /* AddSessionView.swift */; };
+		CA71F5C6D47D23624FE3F584 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC333AEDDD4660A7EA7C2455 /* InfoPlist.strings */; };
 		CAC0B8C478827DDE62748922 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405250C19463FA229BC16824 /* KeychainStore.swift */; };
 		DE7C6E1041E14618CEB6D5BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EAC13365323F339E0D9701 /* ContentView.swift */; };
 		E0A0DD4232BA737FB892B6B4 /* RemoteSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F11198AA1CEF3507A6657 /* RemoteSessionView.swift */; };
 		E249BA0D04419FB49E2B7B4B /* HybridSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7003A5A781E151CE64E1CE1 /* HybridSignInView.swift */; };
 		E788BCD97A4BDD9E334FBB43 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */; };
+		E869B5ADA04FBF180B040CF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDA8E1BA7EA5901376AFFA05 /* InfoPlist.strings */; };
 		E95CA695379A836406FAE021 /* ZCodeAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8F71E07427875BE6CF987 /* ZCodeAccount.swift */; };
 		EA2CCC5BE27D2B2C81B3D159 /* Backoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E0B5F1ECAB2AB2B6B5ED /* Backoff.swift */; };
 		EF026A245CE8FE16C0620F29 /* RPCBinaryCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D19D1679D786A0976A0A03 /* RPCBinaryCodec.swift */; };
@@ -65,6 +68,7 @@
 		6E56A9ECDFDB8CF1B3C4DADB /* RemoteWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWebView.swift; sourceTree = "<group>"; };
 		7512A2A0545F2FDD31B11CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80EAC13365323F339E0D9701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8420196D639C69DB5C02DAD5 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		8BA5FE953EB0854A79B9C8DA /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		90EBF9EB7E08E31C8179CE8D /* VersionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionChecker.swift; sourceTree = "<group>"; };
 		928C47324D50A6ED7AAE2C69 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -78,10 +82,12 @@
 		D59B6D992C1285AEAB224A2D /* RemoteSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSession.swift; sourceTree = "<group>"; };
 		D7003A5A781E151CE64E1CE1 /* HybridSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridSignInView.swift; sourceTree = "<group>"; };
 		DB785AED7C0A00DEFEE59432 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DC333AEDDD4660A7EA7C2455 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		E0EC0144FB3CAA64E7F31518 /* RemoteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLink.swift; sourceTree = "<group>"; };
 		E7E9A9E2DE078217A57F07B1 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F087B36846B8D843B68E385C /* ZCodeRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ZCodeRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA8E1BA7EA5901376AFFA05 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -142,6 +148,8 @@
 		5F3A18EB41718A1439D0CDE5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C91E3F3FCD0BC415DAA96CF6 /* en.lproj */,
+				BE7D014776FF7E539C36A840 /* ru.lproj */,
 				7512A2A0545F2FDD31B11CE3 /* Assets.xcassets */,
 				EC6C4432F099A26AC8C8725F /* Localizable.xcstrings */,
 			);
@@ -160,6 +168,7 @@
 				D7003A5A781E151CE64E1CE1 /* HybridSignInView.swift */,
 				928C47324D50A6ED7AAE2C69 /* LogView.swift */,
 				B9CC34A1D0A34301427418D3 /* NativeSessionView.swift */,
+				8420196D639C69DB5C02DAD5 /* QRScannerView.swift */,
 				403F11198AA1CEF3507A6657 /* RemoteSessionView.swift */,
 				6E56A9ECDFDB8CF1B3C4DADB /* RemoteWebView.swift */,
 			);
@@ -174,6 +183,22 @@
 				25D19D1679D786A0976A0A03 /* RPCBinaryCodec.swift */,
 			);
 			path = NativeRemote;
+			sourceTree = "<group>";
+		};
+		BE7D014776FF7E539C36A840 /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DC333AEDDD4660A7EA7C2455 /* InfoPlist.strings */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
+		C91E3F3FCD0BC415DAA96CF6 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FDA8E1BA7EA5901376AFFA05 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		E5EB86E145B875F58F15CD55 /* Models */ = {
@@ -271,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A73A4F1F595BAF1CC303ED8 /* Assets.xcassets in Resources */,
+				E869B5ADA04FBF180B040CF1 /* InfoPlist.strings in Resources */,
+				CA71F5C6D47D23624FE3F584 /* InfoPlist.strings in Resources */,
 				E788BCD97A4BDD9E334FBB43 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +326,7 @@
 				FDE106002942F25200F6EA10 /* NativeRemoteClient.swift in Sources */,
 				2EE3956C1D1D7BF915E9DC0C /* NativeRemoteProtocol.swift in Sources */,
 				3AC62F80898087F5A253D218 /* NativeSessionView.swift in Sources */,
+				2BE1A515079EABA9A12C7AB2 /* QRScannerView.swift in Sources */,
 				EF026A245CE8FE16C0620F29 /* RPCBinaryCodec.swift in Sources */,
 				072F52206EF65D3D68E048F6 /* RemoteLink.swift in Sources */,
 				1B996535C162503C19446338 /* RemoteSession.swift in Sources */,

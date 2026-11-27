@@ -11,6 +11,14 @@ struct AccountListView: View {
     @State private var editingSession: RemoteSession?
     @State private var showLogs = false
     @State private var nativeSession: NativeSessionTarget?
+    @State private var showQRScanner = false
+    @State private var scannedFields: ScannedFields?
+    @State private var qrError: String?
+
+    private struct ScannedFields: Identifiable {
+        let id = UUID()
+        let fields: RemoteLink.Fields
+    }
 
     private struct NativeSessionTarget: Identifiable {
         let id: UUID
@@ -152,6 +160,9 @@ struct AccountListView: View {
                         withAnimation { editMode?.wrappedValue = .inactive }
                     }
                 }
+                Button { showQRScanner = true } label: {
+                    Image(systemName: "qrcode.viewfinder")
+                }
                 Button { showAddAccount = true } label: {
                     Image(systemName: "plus")
                 }
@@ -174,13 +185,56 @@ struct AccountListView: View {
         .sheet(item: $nativeSession) { target in
             NativeSessionView(sessionID: target.id)
         }
+        .sheet(isPresented: $showQRScanner) {
+            NavigationStack {
+                QRScannerView { code in
+                    handleScanned(code)
+                }
+                .navigationTitle("Сканировать QR")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Отмена") { showQRScanner = false }
+                    }
+                }
+            }
+        }
+        .sheet(item: $scannedFields) { scanned in
+            if let accountID = model.selectedAccountID ?? model.accounts.first?.id {
+                AddSessionView(accountID: accountID, initialFields: scanned.fields)
+            }
+        }
+        .alert("QR-код не распознан", isPresented: Binding(
+            get: { qrError != nil },
+            set: { if !$0 { qrError = nil } }
+        )) {
+            Button("Ок", role: .cancel) {}
+        }
         .task {
+            if let argument = CommandLine.arguments.first(where: { $0.hasPrefix("qr-code=") }) {
+                handleScanned(String(argument.dropFirst("qr-code=".count)))
+            }
             if CommandLine.arguments.contains("native"),
                let id = model.selectedSessionID ?? model.sessions.first?.id {
                 nativeSession = NativeSessionTarget(id: id)
             }
             await model.versionChecker.check()
         }
+    }
+    private func handleScanned(_ code: String) {
+        guard let fields = RemoteLink.parse(code) else {
+            qrError = code
+            return
+        }
+        showQRScanner = false
+        if model.accounts.isEmpty {
+            model.addAccount(
+                label: fields.name.isEmpty ? "ZCode" : fields.name,
+                username: "",
+                token: nil
+            )
+        }
+        scannedFields = ScannedFields(fields: fields)
     }
 }
 
