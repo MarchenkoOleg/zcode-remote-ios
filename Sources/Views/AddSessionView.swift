@@ -2,15 +2,23 @@ import SwiftUI
 
 struct AddSessionView: View {
     let accountID: UUID
+    let allowsAccountSelection: Bool
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
 
     @State private var linkText = ""
     @State private var fields = RemoteLink.Fields(sid: "", mid: "", name: "", appVersion: "3.19.0")
     @State private var parseError: String?
+    @State private var selectedAccountID: UUID
 
-    init(accountID: UUID, initialFields: RemoteLink.Fields? = nil) {
+    init(
+        accountID: UUID,
+        initialFields: RemoteLink.Fields? = nil,
+        allowsAccountSelection: Bool = false
+    ) {
         self.accountID = accountID
+        self.allowsAccountSelection = allowsAccountSelection
+        _selectedAccountID = State(initialValue: accountID)
         _fields = State(initialValue: initialFields
             ?? RemoteLink.Fields(sid: "", mid: "", name: "", appVersion: "3.19.0"))
     }
@@ -40,6 +48,16 @@ struct AddSessionView: View {
                     Text("Ссылка распознаётся автоматически, как только в ней появятся sid и mid.")
                 }
 
+                if allowsAccountSelection {
+                    Section {
+                        Picker("Аккаунт", selection: $selectedAccountID) {
+                            ForEach(model.accounts) { account in
+                                Text(account.label).tag(account.id)
+                            }
+                        }
+                    }
+                }
+
                 Section("Параметры") {
                     TextField("sid", text: $fields.sid)
                         .textInputAutocapitalization(.never)
@@ -65,7 +83,7 @@ struct AddSessionView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Сохранить") {
-                        model.addSession(fields: fields, accountID: accountID)
+                        model.addSession(fields: fields, accountID: selectedAccountID)
                         dismiss()
                     }
                     .disabled(!canSave)

@@ -201,7 +201,11 @@ struct AccountListView: View {
         }
         .sheet(item: $scannedFields) { scanned in
             if let accountID = model.selectedAccountID ?? model.accounts.first?.id {
-                AddSessionView(accountID: accountID, initialFields: scanned.fields)
+                AddSessionView(
+                    accountID: accountID,
+                    initialFields: scanned.fields,
+                    allowsAccountSelection: true
+                )
             }
         }
         .alert("QR-код не распознан", isPresented: Binding(
